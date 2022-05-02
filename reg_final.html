@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+<link rel="stylesheet" href="reg_final.css" >
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/cf18a79c83.js" crossorigin="anonymous"></script>
+    <script>  
+        function validateform()  
+        {  
+        var email=document.Registerform.email.value;  
+        var atposition=email.indexOf("@");  
+        var dotposition=email.lastIndexOf("."); 
+        var password=document.Registerpassword.value;   
+        var repassword=documen.Registerpassword.value;
+       
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+          alert("Please enter a valid e-mail address ");  
+          return false;  
+          }
+          if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+        }  
+         if(password==repassword){   
+        return true;  
+        }  
+        if(password!=repassword){  
+        alert("password must be same!");  
+            return false;
+        }  
+        
+        }  
+  
+        function mouseOver() { document.getElementById("demo").style.color  =  "blanchedalmond"; }
+        
+        function mouseOut() { document.getElementById("demo").style.color  =  "black"; }
+        
+        </script>
+  
+      <nav>
+        <a href="Home_page.html">Home</a>
+        <a href="log_final.html">Login</a>
+        <a href="booking.html">Book an Appointment</a>
+        <a href="Contact_final.html">Contact Us</a>
+     </nav>
+     
+     
+     
+<div class="background">
+
+<form name="Registerform"action="Registration.php" method="post" onsubmit=  "validateform()" >
+<h3 id ="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Register Here</h3>
+
+<input type="text" name="username" id="username"placeholder="Enter your Us" id="username">
+<input type="password" name="password" id="password"placeholder="Enter your password">
+<input type="password" name="repassword" id="repassword"placeholder="Re-enter your password">
+<select class="gender" name="gender" required>
+  <option value="disabled">Gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+  
+</select>
+<input type="text" name="mobile" id="mobile" placeholder="Enter your Mobile Number" maxlength="10" required>
+<input type="text" name="email" id="email" placeholder="Enter your email address" required>
+<input type="text" name="address" id="address" placeholder="Enter your Address" required>
+     Already a user?<a href="log_final.html">Login</a>
+  
+    <button>Register</button>
+<div class="social">
+<div class="go"><ion-icon name="logo-google"></ion-icon>Google</div>
+<div class="fb"><ion-icon name="logo-facebook"></ion-icon>Facebook</div>
+</div>
+</form>
+</div>
+</body>
+</html>
+
+
+<!--INSERT INTO `register_details` (`snoo`, `email`, `password`, `repassword`, `gender`, `mobile`, `address`, `date`) VALUES ('1', 'this@this.com', 'aamir123', 'aamir123', 'male', '9920397276', 'aaabbb', current_timestamp());-->

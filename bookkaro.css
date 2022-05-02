@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing:border-box; 
+}
+
+body{
+    background-color: beige;
+}
+.navbar
+{
+margin-top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+padding: 0px 40px;
+
+width: 100%;
+height: 85px;
+background-color: black;
+color: blanchedalmond;
+box-shadow: 12px 12px 20px 0 rgb(208 209 210);
+}
+.navbar h2
+{
+font-size: 50px;
+font-weight: bold;
+}
+.navbar ul
+{
+display: flex;
+height: 80px;
+align-items: center;
+}
+.navbar ul li
+{
+list-style:none;
+margin-right: 12px;
+font-weight: bold;
+font-size: 20px;
+cursor: pointer;
+position: relative;
+}
+.navbar ul li:after
+{
+content: '';
+position: absolute;
+display: block;
+width: 0%;
+height: 3px;
+background-color: black;
+bottom: -37px;
+transition: .3s;
+}
+.navbar ul li:first-child:after
+{
+width: 100%;
+}
+.navbar ul li:hover:after
+{
+width: 100%;
+}
+.navbar ion-icon
+{
+color: #000;
+cursor: pointer;
+font-size: 15px;
+padding: 20px;
+margin-bottom: 45px;
+border-radius: 50%;
+background-color:blanchedalmond;
+}
+.navbar button
+{
+width: 150px;
+height: 45px;
+margin-bottom: 10px;
+border-radius: 40px;
+margin-left: 20px;
+color: #fff;
+font-weight: bolder;
+background-color: black;
+font-size: 18px;
+border: 1px solid blanchedalmond;
+cursor: pointer;
+
+transition: 0.5s;
+position: relative;
+overflow: hidden;
+padding: 1px;
+}
+.navbar button:before
+{
+content: '';
+position: absolute;
+width: 70%;
+height: 55px;
+top: 0;
+transition: .8s;
+left: -150%;
+bottom: 0;
+background: linear-gradient(to left, rgb(255 255 255 / 25%), transparent);
+}
+.navbar button:hover
+{
+box-shadow: none;
+}
+.navbar button:hover:before
+{
+left: 70%;
+}
+.social
+{
+display: flex;
+justify-content: center;
+}
+.navbar h2{
+    font-family: 'Christian Sunday',sans-serif;
+}
+.wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background:black;
+    max-width: 600px;
+    width: 150%;
+    padding:15px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+
+
+}
+.wrapper .input{
+    width:95%;
+    padding:15px 20px;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+.searchbtn{
+    background:blanchedalmond;
+    width: 10%;
+    border-radius: 5px;
+    position:relative;
+    cursor:pointer;
+    left: 7px;
+}
+.searchbtn .fas{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:18px;
+}
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: beige;
+}
+.title-text{
+    margin-top:70px;
+
+}
+.title-text h1{
+    text-align: center;
+    font-family: -webkit-body;
+}
+.bg{
+    background: black;
+    
+    
+}
+
+.box{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.box img{
+    margin:50px;
+    background-color:blanchedalmond;
+    padding:15px;
+    border-radius:15px;
+}
+.image{
+    border:1px solid black;
+    border-radius:20px
+}
+@media screen and (max-width:770px) {
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .single-desc p{
+        font-size :12px;
+    }
+    hr {
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
+    }
+        
+}
+#footer{
+    padding:20px 0 20px;
+    background: black;
+    position: relative;
+    
+}
+.footer-row{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis:45%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.footer-right{
+    text-align: right;
+    color: white;
+}
+.footer-row h1{
+    margin: 10px 0;
+    color: white;
+}
+.footer-row p{
+    line-height:35px;
+    color: white;
+}
+.footer-right .fa{
+    font-size:20px;
+    color: white;
+    margin: 10px;
+}
+.footer-left .fa{
+    font-size:20px;
+    color: white;
+    margin:10px;
+}
+
+.footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position:absolute;
+    left:50%;
+    top:35%;
+    transform: translate(-50%, -50%);
+}
+.social-links{
+    
+    text-align: center;
+    
+}
+.fa {
+    padding: 15px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover,.fab:hover {
+    opacity: 0.7;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background: purple;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-youtube{
+    background: red;
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+
+@media screen and (max-width:770px) {
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 15px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+}

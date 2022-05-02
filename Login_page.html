@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign In</title>
+    <link rel="stylesheet" href="Login_page.css">
+    <style type="text/css">
+        input[type="submit"] {
+            cursor: pointer;
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+        <a href="Home_page.html">Home</a>
+        <a href="Registration_page.html">Register</a>
+        <a href="Book an Appointment.html">Book an Appointment</a>
+        <a href="#"></a>
+     </nav>
+    
+        <h2>Login here</h2>
+        <form action="login.php" method="post"></form>
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" name="username" placeholder="Username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password" placeholder="Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="login" value="Login">
+                </td>
+                <td>
+                    Don't have an account?<a href="Registration_page.html">Register</a>
+                </td>
+            </tr>
+        </table>
+    
+</div>
+    
+</body>
+</html>

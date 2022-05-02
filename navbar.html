@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Navbar design in HTML and CSS</title>
+
+<link rel="stylesheet" href="reg_final.css">
+<link href="http://fonts.cdnfonts.com/css/christian-sunday" rel="stylesheet">
+<link rel="stylesheet" href="navbarstyle.css">
+</head>
+<style type="text/css">
+
+</style>
+<body>
+<div class="navbar">
+<h2>Salonz</h2>
+
+<ul>
+<li class="active">Home</li>
+<li>Login</li>
+<li>About</li>
+<li>Book Now</li>
+<li></li>
+
+</ul>
+<div class="social">
+
+<button>Contact Us</button>
+</div>
+</div>
+
+<div class="background">
+
+    <form name="Registerform"action="Registration.php" method="post" onsubmit=  "validateform()" >
+    <h3 id ="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Register Here</h3>
+    
+    <input type="text" name="email" id="email"placeholder="Enter your email address" id="username">
+    <input type="password" name="password" id="password"placeholder="Enter your password">
+    <input type="password" name="repassword" id="repassword"placeholder="Re-enter your password">
+    <input type="text" name="gender" id="gender" placeholder="Gender" required>
+    <input type="text" name="mobile" id="mobile" placeholder="Enter your Mobile Number" maxlength="10" required>
+    <input type="text" name="address" id="address" placeholder="Enter your Address" required>
+         Already a user?&nbsp;<a href="log_final.html">Login</a>
+      
+        <button>Register</button>
+    <div class="social">
+    <div class="go"><ion-icon name="logo-google"></ion-icon>Google</div>
+    <div class="fb"><ion-icon name="logo-facebook"></ion-icon>Facebook</div>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

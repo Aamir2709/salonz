@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/cf18a79c83.js" crossorigin="anonymous"></script>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login_page.css">
+  </head>
+  <style>
+    .container {
+      background:beige;
+      padding: 1.5em;
+      border-radius : 10%;
+      border: 1px black solid
+    }
+  </style>
+  
+
+  <body>
+    <script>  
+      function validateform()  
+      {  
+      var x=document.Loginform.email.value;  
+      var atposition=x.indexOf("@");  
+      var dotposition=x.lastIndexOf("."); 
+      var password=document.Loginform.password.value;   
+      if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+        alert("Please enter a valid e-mail address ");  
+        return false;  
+        }
+        else if(password.length<6){  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+      }  
+       
+      }  
+
+      function mouseOver() { document.getElementById("demo").style.color  =  "Grey"; }
+      
+      function mouseOut() { document.getElementById("demo").style.color  =  "black"; }
+      
+      </script>
+
+    <nav>
+      <a href="Home_page.html">Home</a>
+      <a href="Registration_page.html">Register</a>
+      <a href="booking.html">Book an Appointment</a>
+      <a href="#"></a>
+   </nav>
+   <form name="Loginform"   action="Home_page.html"   onsubmit="return validateform()"  >
+    <div class="container">
+      <h1 id ="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Login here </h1>
+      <div class="box">
+        <i class="fa fa-envelope"></i>
+        <input type="text" name="email" id="email" placeholder="Enter you email">
+      </div>
+      <div class="box">
+        <i class="fa fa-key"></i>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+      </div>
+      <span>
+      <input type="checkbox">
+      <label >Remember me</label>
+      &nbsp;&nbsp;
+    </span>
+      <span>
+        Not a user?<a href="Registration_page.html">Register</a>
+      </span>
+      <br>
+      <button class="btn">Login</button>
+    </div>
+    </form>
+    
+    
+  </body>
+</html>

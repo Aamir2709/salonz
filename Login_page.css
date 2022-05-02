@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+    nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+
+body{
+    background: url(/images/Login.jpg) no-repeat center center fixed;
+    background-size:cover;
+    font-family:verdana,sans-serif;
+}
+.container{
+    
+    position: absolute;
+    top: 35%;
+    left: 38%;
+}
+.container h1{
+    font-family: 'Heebo', sans-serif;
+    width: 90%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid black;
+    margin: bottom 15px;
+    padding: 13px 0; 
+
+}
+.box{
+    width: 100%;
+    margin: 22px 0px;
+    
+    border-bottom: 2px solid black;
+}
+.box input{
+    background: none;
+    padding: 5px 10px;
+    width: 75%;
+    
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: black;
+}
+.btn{
+    color: black;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    
+}
+.box i{ 
+    padding: 0 12px;
+    width: 25px; 
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.5;
+    color: black; 
+    background: beige; 
+    
+}

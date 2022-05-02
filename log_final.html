@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="log_final.css">
+
+<title>Login</title>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+
+
+</style>
+<body>
+    <script src="https://kit.fontawesome.com/cf18a79c83.js" crossorigin="anonymous"></script>
+    <script>  
+        function validateform()  
+        {  
+        var email=document.Loginform.email.value;  
+        var atposition=email.indexOf("@");  
+        var dotposition=email.lastIndexOf("."); 
+        var password=document.Loginform.password.value;   
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length){  
+          alert("Please enter a valid e-mail address ");  
+          return false;  
+          }
+          else if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+        }  
+         
+        }  
+  
+        function mouseOver() { document.getElementById("demo").style.color  =  "Grey"; }
+        
+        function mouseOut() { document.getElementById("demo").style.color  =  "black"; }
+        
+        </script>
+  
+      <nav>
+        <a href="Home_page.html">Home</a>
+        <a href="reg_final.html">Register</a>
+        <a href="booking.html">Book an Appointment</a>
+        <a href="Contact_final.html">Contact Us</a>
+     </nav>
+<div class="background">
+<div class="shape"></div>
+<div class="shape"></div>
+<form name="Loginform"action="Home_page.html" onsubmit= "return validateform()" >
+<h3 id ="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Login </h3>
+
+<div class="box">
+<i class="fa fa-envelope"></i>
+
+<input type="text" name="email" id="email"placeholder="Enter your username or email" id="username">
+
+
+<i class="fa fa-key"></i>
+
+<input type="password" name="password" id="password"placeholder="Enter your password" id="password">
+</div>
+<div class="forgot">
+  <a href="#">Forgot Password?</a> 
+</div>
+<div class="remember">
+ 
+  <input type="checkbox" name="remember">
+  <label style="margin:0;">Remember me</label>
+  &nbsp;&nbsp;
+
+  <span style="padding-left: 35px;">
+    Not a user?<a href="reg_final.php">Register</a>
+  </span>
+</div>
+  <button>Log in</button>
+
+<div class="social">
+<div class="go"><ion-icon name="logo-google"></ion-icon>Google</div>
+<div class="fb"><ion-icon name="logo-facebook"></ion-icon>Facebook</div>
+</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+    nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+.container{
+    background-color:black
+}
+
+
+
+.form {
+    position: absolute;
+    width: 600px;
+    margin-top: 7%;
+    
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: blanchedalmond;
+}
+
+.form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid black;
+    color: blanchedalmond;
+}
+
+
+
+.left-pan i {
+    padding-left: 10px;
+    color: blanchedalmond;
+}
+
+.form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+    
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+    
+}

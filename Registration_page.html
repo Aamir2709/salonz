@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Registration_page.css">
+    <style type="text/css">
+        input[type="submit"] {
+            color: black;
+    cursor: pointer;
+    outline: none; 
+    margin: 12px 0;
+    padding: 10px 21px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+
+        }
+        
+        
+     
+    
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="Home_page.html">Home</a>
+        <a href="Login_new.html">Login</a>
+        <a href="booking.html">Book an Appointment</a>
+        <a href="#"></a>
+     </nav>
+     <center>
+     <?php
+        if($insert == true) {
+        echo "<h3 class='submitMsg'>Thank you for registering with us.</h3>";}
+        ?>
+        </center>
+    <form action="Registration.php" method="post">
+    <center>
+        
+        <h2>Register here</h2>
+        <table>
+            <tr>
+                <td>Enter Username:</td>
+                <td>
+                    <input type="text" name="username" placeholder="Enter Username" >
+
+                </td>
+                <tr>
+                <td>Enter Password:</td>
+                <td>
+                    <input type="password" name="password" placeholder="Enter Password" >
+                </td>
+            </tr>
+            <tr>
+                <td>Re-enter Password:</td>
+                <td>
+                    <input type="password" name="reenter_password" placeholder="Re-enter Password" >
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="text" name="gender" placeholder="Gender">
+                    <br>
+                </td>
+                </tr>
+                <tr>
+                    <div class="box">
+                <td>Mobile Number:</td>
+                <td>
+                    <select id="options" style="background: none";
+                    padding: 5px 10px;
+                    width: 75%;
+                    
+                    font-size: 20px;
+                    border: none;
+                    outline:none;
+                    color: white;
+                    font-family: 'Heebo', sans-serif;
+                    width: 75%;
+                    display: inline-block;
+                    font-size: 20px;
+                    border-bottom: 5px solid black;
+                    margin: bottom 15px;
+                    padding: 13px 0;>
+                        <option >+91</option>
+                        <option >+44</option>
+                        <option >+93</option>
+                        <option >+213</option>
+                        <option >+92</option>
+                    </select>
+                    <input type="text " name="mobile" placeholder="Mobile Number" maxlength="10" 
+                    
+                    style= "background: none";
+                    padding: 5px 10px;
+                    width: 75%;
+                    
+                    font-size: 20px;
+                    border: none;
+                    outline:none;
+                    color: white;
+                    font-family: 'Heebo', sans-serif;
+                    width: 75%;
+                    display: inline-block;
+                    border-bottom: 5px solid black;
+                    margin: bottom 15px;
+                    padding: 13px 0; >
+                </td>
+            </div>
+                <tr>
+                <td>Address:</td>
+                <td>
+                    <input type="text" size="35" name="address" placeholder="Address">
+                </td>
+            </tr>
+
+            </tr>
+            
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </td>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="Register">
+                    </td>
+                
+                    <td>
+                        Already a User? <a href="Login_new.html">Login</a>
+                    </td>
+                </tr>
+            </tr>
+
+        </table>
+    </center>
+</form>
+<script src="registration.js"></script>
+
+    
+</body>
+</html>
